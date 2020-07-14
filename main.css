@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  font-size: 13px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+img {
+  width: 350px;
+}
+.patient_Details {
+  border: 1px solid grey;
+  margin: 10px;
+  padding: 0 20px 15px 20px;
+  width: 600px;
+}
+
+.form-group {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.form-group.text-field label {
+  display: inline-block;
+  width: 110px;
+}
+
+input[type='text'],
+input[type='email'] {
+  width: 200px;
+  padding: 3px;
+  border-width: 1px;
+  border-radius: 2px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+.form-group select {
+  width: 150px;
+  margin: 5px 0;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+input[type='checkbox'] {
+  margin-right: 5px;
+}
+
+.btn {
+  background: rgba(230, 230, 230, 0.911);
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #dddddd;
+}
+
+.btn-1 {
+  padding: 3px 10px;
+  border-radius: 3px;
+}
+
+.patients-table {
+  border-collapse: collapse;
+  border: #dddddd 1px solid;
+}
+
+.patients-table thead th {
+  background-color: rgba(230, 230, 230, 0.911);
+  border: #dddddd 1px solid;
+  width: 150px;
+}
+
+.patients-table thead th:nth-child(3),
+.patients-table thead th:nth-child(5),
+.patients-table thead th:nth-child(6) {
+  width: 50px;
+}
+
+.patients-table th,
+.patients-table td {
+  padding: 0.75rem 0.9rem;
+  border: #dddddd 1px solid;
+  font-size: 12px;
+}
+
+.patients-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 12px;
+  }
+
+  img {
+    margin-top: 15px;
+    width: 170px;
+  }
+
+  .patient_Details {
+    width: 500px;
+  }
+
+  .form-group.text-field label {
+    display: inline-block;
+    width: 100px;
+  }
+
+  input[type='text'],
+  input[type='email'] {
+    width: 180px;
+  }
+
+  patients-table thead th {
+    width: 70px;
+  }
+
+  .patients-table thead th:nth-child(3),
+  .patients-table thead th:nth-child(5),
+  .patients-table thead th:nth-child(6) {
+    width: 30px;
+  }
+
+  .patients-table th,
+  .patients-table td {
+    padding: 0.5rem 0.4rem;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 11px;
+  }
+
+  img {
+    margin-top: 15px;
+    width: 150px;
+  }
+
+  .patient_Details {
+    width: 350px;
+  }
+
+  .form-group.text-field label {
+    display: inline-block;
+    width: 95px;
+  }
+
+  input[type='text'],
+  input[type='email'] {
+    width: 120px;
+  }
+
+  .form-group select {
+    width: 110px;
+  }
+
+  .patients-table th,
+  .patients-table td {
+    padding: 0.5rem 0.2rem;
+    font-size: 10px;
+  }
+
+  .btn-1 {
+    padding: 3px 5px;
+  }
+}

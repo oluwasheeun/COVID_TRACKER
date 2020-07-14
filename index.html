@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>NCDC COVID-19 Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head-logo">
+        <img src="./img/ncdc.png" alt="NCDC Logo">
+      </div>
+      <div class="patient_Details">
+        <form id="patient-form">
+          <div class="form-group text-field">
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" required />
+          </div>
+          <div class="form-group text-field">
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" required />
+          </div>
+          <div class="form-group text-field">
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="form-group text-field">
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender" required>
+              <option value="">Male, Female</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" name="checkbox" id="checkbox" checked />
+            <label for="checkbox"
+              >Recently came in to Nigeria within the last 14 days?</label
+            >
+          </div>
+
+          <input type="submit" value="Submit" class="btn" />
+        </form>
+      </div>
+
+      <div class="patients">
+        <table class="patients-table">
+          <thead>
+            <th>Name</th>
+            <th>Email Address</th>
+            <th>Gender</th>
+            <th>Came to Nigeria within the last 14 days</th>
+            <th></th>
+            <th></th>
+          </thead>
+          <tbody class="patient-information">
+            <tr>
+              <td>Ada Lovelace</td>
+              <td>a@b.com</td>
+              <td>Male</td>
+              <td><a href="#">No</a></td>
+              <td><span class="btn btn-1 edit">Edit</span></td>
+              <td><span class="btn btn-1 delete">Delete</span></td>
+            </tr>
+            <tr>
+              <td>Grace Hopper</td>
+              <td>a@b.com</td>
+              <td>Female</td>
+              <td><a href="#">Yes</a></td>
+              <td><span class="btn btn-1 edit">Edit</span></td>
+              <td><span class="btn btn-1 delete">Delete</span></td>
+            </tr>
+            <tr>
+              <td>Magaret Hamilton</td>
+              <td>a@b.com</td>
+              <td>Female</td>
+              <td><a href="#">No</a></td>
+              <td><span class="btn btn-1 edit">Edit</span></td>
+              <td><span class="btn btn-1 delete">Delete</span></td>
+            </tr>
+            <tr>
+              <td>Joan Clarke</td>
+              <td>a@b.com</td>
+              <td>Male</td>
+              <td><a href="#">No</a></td>
+              <td><span class="btn btn-1 edit">Edit</span></td>
+              <td><span class="btn btn-1 delete">Delete</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
