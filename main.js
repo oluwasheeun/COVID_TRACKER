@@ -56,6 +56,7 @@ const editPatientInformation = (e) => {
     </tr>`;
 
       formData.reset();
+      update.value = 'Submit';
     });
   }
 };
