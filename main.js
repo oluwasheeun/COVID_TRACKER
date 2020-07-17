@@ -45,6 +45,7 @@ const editPatientInformation = (e) => {
     // Overwrite patient Information
     update.addEventListener('click', (e) => {
       e.preventDefault();
+      update.disabled = true;
 
       patient.innerHTML = `<tr>
       <td>${firstName.value} ${lastName.value}</td>
@@ -56,6 +57,7 @@ const editPatientInformation = (e) => {
     </tr>`;
 
       formData.reset();
+      update.disabled = false;
       update.value = 'Submit';
     });
   }
