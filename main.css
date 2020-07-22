@@ -48,7 +48,8 @@ input[type='email'] {
 }
 
 input:focus,
-select:focus {
+select:focus,
+button {
   outline: none;
 }
 
@@ -106,6 +107,25 @@ input[type='checkbox'] {
 
 .patients-table tbody tr {
   border-bottom: 1px solid #dddddd;
+}
+
+.alert {
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  width: 25%;
+  padding: 0.4rem;
+  opacity: 0.9;
+  background: #dc3545;
+  color: #fff;
+}
+
+.alert-success {
+  background: #4cae4c;
+}
+
+.update-data {
+  display: none;
 }
 
 @media (max-width: 800px) {
@@ -185,5 +205,9 @@ input[type='checkbox'] {
 
   .btn-1 {
     padding: 3px 5px;
+  }
+
+  .alert {
+    width: 30%;
   }
 }
