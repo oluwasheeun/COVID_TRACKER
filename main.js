@@ -77,6 +77,9 @@ const editPatientInformation = (e) => {
         <td><span class="btn btn-1 edit">Edit</span></td>
         <td><span class="btn btn-1 delete">Delete</span></td></tr>`;
 
+      formData.reset();
+      update.style.display = 'none';
+      document.querySelector('input[type=submit]').style.display = 'inline-block';
       showAlert('Update Successful', 'alert alert-success');
     });
   }
